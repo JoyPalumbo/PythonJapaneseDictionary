@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+   body {
+      background: linear-gradient(to bottom, #cc99ff 0%, #ff66cc 100%) no-repeat center center fixed; 
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    main {
+      margin: 20px 0;
+  padding: 10px;
+  /* margin: 100px 0;
+  padding: 300px; */
+    }
+    main div {
+      
+      margin: 0 auto;
+      padding: 15px;
+  margin: 5px auto;
+    }
+
+    main div:nth-child(1) {
+  width: 400px;
+}
+main div:nth-child(2) {
+  width: 400px;
+}
+main div:nth-child(3) {
+  width: 400px;
+}
+button {
+  text-align: center;
+}
+  </style>
+</head>
+<body>
+
+  <main> 
+    <div>
+      <h1>Japanese Dictionary</h1>
+    </div>
+    <div>
+
+      <form role="form" method='POST' action='/'>
+        <label for="lname">English Word: </label>
+        <input type="text" id="english" name="english"><br><br>
+        <input class="button" type="submit" value="Submit">
+      </form>
+    </div>
+    
+    <div> 
+
+      <h3>The Japanese translation of your word is:</h3>
+      <h4>Kanji: {{kanji}}</h4>
+      <h4>Hirigana/Katakana: {{hirigana}}</h4>
+      <h4>English: {{englishWord}}</h4>
+    </div>
+  </main>
+
+
+</body>
+</html>
+
