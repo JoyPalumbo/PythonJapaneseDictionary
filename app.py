@@ -26,6 +26,8 @@ def getWords():
    # print("words", datas['data'][0]['japanese'][0])
    if len(datas['data'][0]['japanese'][0]) == 1:
       kanji = 'None'
+      # hirigana = "None"
+      # englishWord = "NONE"
    else: 
       kanji = datas['data'][0]['japanese'][0]['word']
    hirigana = datas['data'][0]['japanese'][0]['reading']
@@ -44,5 +46,6 @@ def getWords():
    # response = requests.request("GET", 'https://jisho.org/api/v1/search/words?keyword=house')
    # print(response)
 
-# if __name__ == '__main__':
-app.run()
+
+if __name__ == '__main__':
+   app.run()
